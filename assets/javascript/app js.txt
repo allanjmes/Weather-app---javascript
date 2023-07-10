@@ -1,0 +1,37 @@
+const cityForm = document.querySelector("form");
+const locationDetails = document.querySelector(".location-details");
+const countryDetails = document.querySelector(".country-details");
+
+const updateCity = async (city) => {
+    const cityDetails = await getCityDetails(city);
+    const cityWeather = await getWeatherDetails(cityDetails.Key);
+
+    return {
+        cityDetails: cityDetails,
+        cityWeather: cityWeather,
+    };
+
+}
+
+const updateUI = async (data) => {
+    const cityDets = data.cityDetails;
+    const weather = data.cityWeather;
+
+    locationDetails.textContent = cityDets.EnglishName
+    countryDetails.textContent = cityDets.Country.EnglishName
+
+}
+
+
+
+cityForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const city = cityForm.value;
+    cityForm.reset();
+
+    updateCity(city).then((data) => {
+        updateUI(data);
+    }).catch(err => console.log(err))
+
+});

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatheria</title>
+    <!-- MAIN CSS -->
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <span class="logo-wrapper">
+                        <img src="./images/header cloudy.png" class="header-icon" alt="cloud covering sun">
+                        <h2 class="logo">WEATHERIA</h2>
+                    </span>
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form action="" class="form">
+                    <input type="text" class="form-input" placeholder="Search Location">
+                    <!-- <button class="btn form-btn" type="submit">
+                        <img class="search-icon" src="./images/search icon.png" alt="">
+                    </button> -->
+                </form>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- MAIN WEATHER -->
+    <div class="container main-weather-wrapper header-offset">
+        <div class="main-weather-container">
+            <div class="location-data-container">
+                <div class="left">
+                    <span class="container-title">Current Weather</span>
+                    <span class="location-details">Location, Region</span>
+                    <span class="country-details">Country</span>
+                </div>
+
+                <div class="right">
+                    <span class="date">Date</span>
+                    <span class="time">Time</span>
+                </div>
+                
+            </div>
+
+            <div class="weather-data-container">
+                <span class="weather-icon">
+                    <img src="/images/header cloudy.png" alt="">
+                </span>
+                <div class="weather-ctx-wrapper">
+                    <span class="weather-temp">°C</span>
+                    <span class="weather-context">Sunny</span>
+                </div>
+            </div>
+
+            <div class="real-feel-data-container">
+                <span class="real-feel-temp">Real Feel: °C</span>
+                <span class="real-feel-phrase">Real Feel Phrase</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./javascript/server.js" defer></script>
+    <script src="./javascript/index.js" defer></script>
+    <script src="./javascript/app.js" defer></script>
+</body>
+</html>

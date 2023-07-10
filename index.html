@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatheria</title>
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <span class="logo-wrapper">
+                        <img src="./images/cloudy.png" class="header-icon" alt="cloud covering sun">
+                        <h2 class="logo">WEATHERIA</h2>
+                    </span>
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form action="" class="form">
+                    <input type="text" name="city" class="form-input" placeholder="Search Location">
+                </form>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="d-grid main-and-forecast-weather-wrapper">
+
+        <!-- MAIN WEATHER -->
+        <div class="container main-weather-wrapper header-offset d-grid main">
+            <div class="main-weather-container main-weather">
+                <div class="location-data-container">
+                    <div class="left">
+                        <span class="container-title">Current Weather</span>
+                        <span class="location-details">Location, Region</span>
+                        <span class="country-details">Country</span>
+                    </div>
+
+                    <div class="right">
+                        <span class="date">Date</span>
+                    </div>
+                    
+                </div>
+
+                <div class="weather-data-container">
+                    <span class="weather-icon">
+                        <img src="./images/cloudy.png" alt="">
+                    </span>
+                    <div class="weather-ctx-wrapper">
+                        <span class="weather-temp">°C</span>
+                        <span class="weather-context">Sunny</span>
+                    </div>
+                </div>
+
+                <div class="real-feel-data-container">
+                    <span class="real-feel-temp">Real Feel: °C</span>
+                    <span class="real-feel-phrase">Real Feel Phrase</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FORECAST TODAY -->
+        <div class="container main-weather-wrapper header-offset today">
+            <div class="main-weather-container today-forecast">
+                <div class="location-data-container">
+                    <div class="left">
+                        <span class="container-title">Today's Forecast</span>
+                    </div>
+
+                    <div class="right forecast-today-date">
+                        <span class="date">Date</span>
+                    </div>
+
+                </div>
+
+                <div class="forecast-headline-today">
+                    <span class="forecast-headline-text">Forecast Headline</span>
+                </div>
+
+                <div class="weather-data-container">
+                    <span class="weather-icon">
+                        <img src="./images/cloudy.png" alt="">
+                    </span>
+                    <div class="weather-ctx-wrapper today-weather-ctx">
+                        <span class="weather-context">Sunny</span>
+                    </div>
+                </div>
+
+                <div class="real-feel-data-container forecast-details probability-today">
+                    <span class="precipitation-probability">Precipitation Probability</span>
+                    <span class="thunderstorm-probability">Thunderstorm Probability</span>
+                    <span class="precipitation-type">Type of Precipitation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORECAST TONIGHT -->
+        <div class="container main-weather-wrapper header-offset tonight">
+            <div class="main-weather-container tonight-forecast">
+                <div class="location-data-container">
+                    <div class="left">
+                        <span class="container-title">Tonight's Forecast</span>
+                    </div>
+
+                    <div class="right forecast-tonight-date">
+                        <span class="date">Date</span>
+                    </div>
+                        
+                </div>
+
+                <div class="forecast-headline-tonight">
+                    <span class="forecast-headline-text">Forecast Headline</span>
+                </div>
+
+                <div class="weather-data-container">
+                    <span class="weather-icon">
+                        <img src="./images/cloudy.png" alt="">
+                    </span>
+                    <div class="weather-ctx-wrapper tonight-weather-ctx">
+                        <span class="weather-context">Sunny</span>
+                    </div>
+                </div>
+
+                <div class="real-feel-data-container forecast-details probability-tonight">
+                    <span class="precipitation-probability">Precipitation Probability</span>
+                    <span class="thunderstorm-probability">Thunderstorm Probability</span>
+                    <span class="precipitation-type">Type of Precipitation</span>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer section">
+
+        <div class="footer-container container d-grid">
+    
+            <div class="company-data">
+    
+                <a href="./index.html">
+                    <h2 class="footer-logo">WEATHERIA</h2>
+                </a>
+
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link">
+                                <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                                <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                                <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="#" class="list-link">
+                                <i class="ri-pinterest-line"></i>
+                        </a>
+                    </li>
+                </ul>
+    
+                    <span class="copyright-notice">&copy; 2022 Weatheria. All rights reserved.</span>
+                    <span class="copyright-notice">Powered by: Accu Weather.</span>
+    
+            
+            </div>
+
+            <div>
+
+                <h2 class="title footer-title">Useful Links</h6>
+    
+                <div class="footer-description">
+                    <p>Header icon by:</p>
+                    <p>Weather icon by:</p>
+                </div>
+
+                <ul class="list footer-list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">About Us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact Us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Services</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Subscription</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Apps & Download</a>
+                    </li>
+        
+                </ul>
+            
+
+            </div>
+    
+    
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="./assets/javascript/index.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
